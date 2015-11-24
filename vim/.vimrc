@@ -10,3 +10,5 @@ augroup markdown
 augroup END
 
 map <C-e> :NERDTreeToggle<CR>
+
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
