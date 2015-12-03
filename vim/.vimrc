@@ -21,6 +21,7 @@ map <C-e> :NERDTreeToggle<CR>
 let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
 
 let s:diffAlgo = 0
+let s:algos = ['myers', 'patience', 'histogram', 'minimal']
 function! ToggleDiff()
 	let hunk = getline(2)
 	if (s:diffAlgo == 0)
@@ -57,15 +58,7 @@ function! ToggleDiff()
 		\ "# then the edit is aborted and the hunk is left unchanged.\<CR>" .
 		\ "#\<CR>\<esc>"
 	
-	if (s:diffAlgo == 0)
-		execute "normal Gi# Current diff strategy: Myers\<esc>"
-	elseif (s:diffAlgo == 1)
-		execute "normal Gi# Current diff strategy: Patience\<esc>"
-	elseif (s:diffAlgo == 2)
-		execute "normal Gi# Current diff strategy: Histogram\<esc>"
-	elseif (s:diffAlgo == 3)
-		execute "normal Gi# Current diff strategy: Minimal\<esc>"
-	endif
+	execute "normal Gi# Current diff strategy: " . s:algos[s:diffAlgo] . "\<esc>"
 
 	let s:diffAlgo += 1
 
