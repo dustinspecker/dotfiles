@@ -8,6 +8,9 @@ set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-N> :bprev<CR>
 
+" highlight searches
+set incsearch
+
 augroup markdown
 	au!
 	au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
