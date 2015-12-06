@@ -39,6 +39,12 @@ set hidden
 " Display line numbers
 set number
 
+" Ignore case when searching
+set ignorecase
+
+" Be smart about cases when searcing
+set smartcase
+
 " highlight first search result while searching
 set incsearch
 
