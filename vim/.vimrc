@@ -48,6 +48,9 @@ set smartcase
 " highlight first search result while searching
 set incsearch
 
+" Don't redraw while executing macros (improved performance)
+set lazyredraw
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
