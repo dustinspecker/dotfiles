@@ -1,23 +1,55 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Pathogen
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
-syntax on
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 filetype plugin indent on
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => User Interface
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" A buffer is hidden when abandoned
+set hidden
+
+" Display line numbers
 set number
 
-set hidden
+" highlight first search result while searching
+set incsearch
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+syntax on
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around, tabs, and buffers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-N> :bprev<CR>
 
-" highlight searches
-set incsearch
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ctrlp.vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => git-diff-switch
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-G> :GitDiffSwitch<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => nerdtree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <C-e> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-flavored-markdown
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 augroup markdown
 	au!
 	au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 augroup END
-
-map <C-e> :NERDTreeToggle<CR>
-
-let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
-
-nnoremap <C-G> :GitDiffSwitch<CR>
