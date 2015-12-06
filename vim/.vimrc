@@ -29,6 +29,10 @@ set wildmode=longest:list,full
 " Always show current position
 set ruler
 
+" Configure backspace to act as a backspace
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
 " A buffer is hidden when abandoned
 set hidden
 
