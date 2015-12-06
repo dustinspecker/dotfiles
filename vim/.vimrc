@@ -51,6 +51,12 @@ set incsearch
 " Don't redraw while executing macros (improved performance)
 set lazyredraw
 
+" Turn off sounds
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
