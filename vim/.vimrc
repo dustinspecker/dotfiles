@@ -9,6 +9,9 @@ execute pathogen#infect()
 " Set how many lines history Vim remembers
 set history=500
 
+" Set to auto read when a file is changed from the outside
+set autoread
+
 " Enable filetype plugins
 filetype plugin indent on
 
