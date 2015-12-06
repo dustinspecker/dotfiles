@@ -62,6 +62,12 @@ set tm=500
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 
+" Set utf-8 as standard encoding and en_US as standard language
+set encoding=utf8
+
+" Use Unix as standard file type
+set ffs=unix,dos,mac
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
