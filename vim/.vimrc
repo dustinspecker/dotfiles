@@ -21,6 +21,11 @@ filetype plugin indent on
 " Set 7 lines to the cursor when moving vertically with j/k
 set so=7
 
+" Turn on the wildmenu
+set wildmenu
+" Set wildmenu list mode
+set wildmode=longest:list,full
+
 " A buffer is hidden when abandoned
 set hidden
 
