@@ -69,6 +69,14 @@ set encoding=utf8
 set ffs=unix,dos,mac
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Files, backups and undo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Turn backup off because we use Git
+set nobackup
+set nowb
+set noswapfile
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <C-N> :bnext<CR>
