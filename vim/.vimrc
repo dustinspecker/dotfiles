@@ -26,6 +26,9 @@ set wildmenu
 " Set wildmenu list mode
 set wildmode=longest:list,full
 
+" Always show current position
+set ruler
+
 " A buffer is hidden when abandoned
 set hidden
 
