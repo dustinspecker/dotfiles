@@ -39,7 +39,7 @@ let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => git-diff-switch
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <C-G> :GitDiffSwitch<CR>
+nmap <C-G> :GitDiffSwitch<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => nerdtree
