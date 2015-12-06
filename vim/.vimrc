@@ -18,6 +18,9 @@ filetype plugin indent on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => User Interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set 7 lines to the cursor when moving vertically with j/k
+set so=7
+
 " A buffer is hidden when abandoned
 set hidden
 
