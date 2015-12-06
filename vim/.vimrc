@@ -6,6 +6,9 @@ execute pathogen#infect()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set how many lines history Vim remembers
+set history=500
+
 " Enable filetype plugins
 filetype plugin indent on
 
