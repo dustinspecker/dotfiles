@@ -82,6 +82,12 @@ set noswapfile
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-N> :bprev<CR>
 
+""""""""""""""""""""""""""""""
+" => Status line
+""""""""""""""""""""""""""""""
+" Always show the status line
+set laststatus=2
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ctrlp.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
