@@ -68,6 +68,12 @@ set encoding=utf8
 " Use Unix as standard file type
 set ffs=unix,dos,mac
 
+" Use 256 colors
+set t_Co=256
+
+" Set color theme
+colorscheme Tomorrow-Night-Eighties
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
