@@ -71,8 +71,11 @@ set ffs=unix,dos,mac
 " Use 256 colors
 set t_Co=256
 
-" Set color theme
-colorscheme Tomorrow-Night-Eighties
+" Use dark background
+set background=dark
+
+" Use base16-eighties
+colorscheme base16-eighties
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
