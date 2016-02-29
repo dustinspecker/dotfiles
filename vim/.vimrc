@@ -68,14 +68,8 @@ set encoding=utf8
 " Use Unix as standard file type
 set ffs=unix,dos,mac
 
-" Use 256 colors
-set t_Co=256
-
 " Use dark background
 set background=dark
-
-" Use base16 256 mode
-let base16colorspace=256
 
 " Use base16-eighties
 colorscheme base16-eighties
