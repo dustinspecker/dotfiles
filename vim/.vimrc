@@ -103,6 +103,12 @@ set laststatus=2
 let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => elm-vim
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Use elm-format on save
+let g:elm_format_autosave = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => git-diff-switch
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <C-G> :GitDiffSwitch<CR>
