@@ -71,6 +71,9 @@ set ffs=unix,dos,mac
 " Use dark background
 set background=dark
 
+" Use 256 colors for base16 theme
+let base16colorspace=256
+
 " Use base16-eighties
 colorscheme base16-eighties
 
