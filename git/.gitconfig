@@ -1,0 +1,28 @@
+[core]
+[user]
+	email = DustinSpecker@DustinSpecker.com
+	name = Dustin Specker
+[push]
+	default = simple
+[alias]
+	c = commit
+	ci = commit
+	cia = commit --amend --no-edit
+	co = checkout
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	p = push -u origin head
+	st = status -sb
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -v
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[diff]
+	algorithm = patience
+[pull]
+	rebase = true
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+	show = diff-so-fancy | less --tabs=1,5 -RFX
