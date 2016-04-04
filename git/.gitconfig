@@ -21,6 +21,7 @@
 	branches = branch -a
 	rc = !sh -c 'git c -m "\""chore(release): bump version to $1"\""' -
 	remotes = remote -v
+	watch = !watch -c git lg
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
