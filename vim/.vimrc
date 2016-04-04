@@ -100,7 +100,7 @@ set laststatus=2
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ctrlp.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|bower_components\|tmp\|git\'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => elm-vim
