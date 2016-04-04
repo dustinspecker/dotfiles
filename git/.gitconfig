@@ -5,6 +5,7 @@
 [push]
 	default = simple
 [alias]
+	bd = branch -d
 	c = commit
 	ci = commit
 	cia = commit --amend --no-edit
