@@ -19,6 +19,7 @@
 	st = status -sb
 	tags = tag -l
 	branches = branch -a
+	rc = !sh -c 'git c -m "\""chore(release): bump version to $1"\""' -
 	remotes = remote -v
 [filter "lfs"]
 	clean = git-lfs clean %f
