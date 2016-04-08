@@ -5,6 +5,7 @@
 [push]
 	default = simple
 [alias]
+	ap = add -p
 	bd = branch -d
 	branches = branch -a
 	c = commit
