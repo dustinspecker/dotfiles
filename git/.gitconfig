@@ -6,6 +6,7 @@
 	default = simple
 [alias]
 	bd = branch -d
+	branches = branch -a
 	c = commit
 	ca = commit --amend
 	ci = commit
@@ -14,13 +15,12 @@
 	e = !git reset --soft head^ && git reset .
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	p = push -u origin head
+	rc = !sh -c 'git c -m "\""chore(release): bump version to $1"\""' -
+	remotes = remote -v
 	sp = stash pop
 	ss = stash
 	st = status -sb
 	tags = tag -l
-	branches = branch -a
-	rc = !sh -c 'git c -m "\""chore(release): bump version to $1"\""' -
-	remotes = remote -v
 	watch = !watch -c git lg
 [filter "lfs"]
 	clean = git-lfs clean %f
