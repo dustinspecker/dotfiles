@@ -19,6 +19,7 @@
 	p = push -u origin head
 	rc = !sh -c 'git c -m "\""chore(release): bump version to $1"\""' -
 	remotes = remote -v
+	sl = stash list
 	sp = stash pop
 	ss = stash
 	st = status -sb
