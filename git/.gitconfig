@@ -10,6 +10,7 @@
 	branches = branch -a
 	c = commit
 	ca = commit --amend
+	cf = commit --fixup
 	ci = commit
 	cia = commit --amend --no-edit
 	cm = commit -m
