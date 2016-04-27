@@ -16,7 +16,7 @@
 	co = checkout
 	edit = !git reset --soft head^ && git reset .
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	p = push -u origin head
+	p = pushit -u origin head
 	rc = !sh -c 'git c -m "\""chore(release): bump version to $1"\""' -
 	remotes = remote -v
 	sl = stash list
