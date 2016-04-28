@@ -15,6 +15,9 @@ set autoread
 " Enable filetype plugins
 filetype plugin indent on
 
+" Set leader to space
+let mapleader = "\<Space>"
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => User Interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -84,6 +87,12 @@ colorscheme base16-eighties
 set nobackup
 set nowb
 set noswapfile
+
+" Edit .vimrc
+nmap <leader>ev :e $MYVIMRC<CR>
+
+" Source .vimrc
+nmap <leader>sv :so $MYVIMRC<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, and buffers
