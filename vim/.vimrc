@@ -100,6 +100,8 @@ nmap <leader>sv :so $MYVIMRC<CR>
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-N> :bprev<CR>
 
+noremap <leader>d :bp\|bd #<CR>
+
 """"""""""""""""""""""""""""""
 " => Status line
 """"""""""""""""""""""""""""""
