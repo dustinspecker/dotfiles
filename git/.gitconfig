@@ -22,6 +22,7 @@
 	p = pushit -u origin head
 	rc = rebase --continue
 	remotes = remote -v
+	rhu = reset --hard @{upstream}
 	sl = stash list
 	sp = stash pop
 	ss = stash
