@@ -23,6 +23,7 @@
 	rc = rebase --continue
 	remotes = remote -v
 	rhu = reset --hard @{upstream}
+	ro = rebase --onto
 	sl = stash list
 	sp = stash pop
 	ss = stash
