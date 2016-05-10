@@ -23,7 +23,7 @@
 	rc = rebase --continue
 	remotes = remote -v
 	rhu = reset --hard @{upstream}
-	ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)'
+	ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)' -
 	sl = stash list
 	sp = stash pop
 	ss = stash
