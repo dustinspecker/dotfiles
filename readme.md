@@ -28,3 +28,6 @@
  - vim-tomorrow-theme
  - vimproc.vim
  - yajs
+
+## Misc.
+ - [pushit](https://github.com/dustinspecker/pushit)
