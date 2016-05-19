@@ -30,4 +30,5 @@
  - yajs
 
 ## Misc.
+ - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
  - [pushit](https://github.com/dustinspecker/pushit)
