@@ -15,8 +15,10 @@
 	cia = commit --amend --no-edit
 	cm = commit -m
 	co = checkout
+	cop = checkout -p
 	cp = cherry-pick
 	cpc = cherry-pick --continue
+	dc = diff --cached
 	edit = !git reset --soft head^ && git reset .
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	p = pushit -u origin head
