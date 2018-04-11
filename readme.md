@@ -9,13 +9,15 @@
 1. `stow vim`
 1. `stow zsh`
 1. `stow tmux`
-1. `tmux`
-1. `<C-b> I` to automatically install tmux plugins and restart tmux server
 
 ## Git
 1. Install [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) for improved diff highlighting
 
-## Tmux resurrection
+## Tmux
+1. `tmux`
+1. `<C-b> I` to automatically install tmux plugins and restart tmux server
+
+### Tmux resurrection
 
 While using tmux, press `<C-b><C-s>` to save the current tmux layout. Next time when starting tmux the server will continue from this save point.
 
