@@ -32,6 +32,10 @@ source /Users/dustin/projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # added by travis gem
 [ -f /Users/dustin/.travis/travis.sh ] && source /Users/dustin/.travis/travis.sh
 
+# key bindings
+bindkey "\e[1~" beginning-of-line
+bindkey "\e[4~" end-of-line
+
 # Base16 Shell
 BASE16_SHELL="$HOME/.config/base16-shell/base16-eighties.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
