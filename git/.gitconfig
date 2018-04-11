@@ -1,10 +1,16 @@
+[branch]
+	autosetuprebase = always
+[color]
+	ui = auto
 [core]
+	pager = diff-so-fancy | less --tabs=4 -RFX
 [user]
 	email = DustinSpecker@DustinSpecker.com
 	name = Dustin Specker
 [push]
 	default = simple
 [alias]
+	amc = am --continue
 	ap = add -p
 	bd = branch -d
 	branches = branch -a
@@ -18,27 +24,26 @@
 	cop = checkout -p
 	cp = cherry-pick
 	cpc = cherry-pick --continue
-	dc = diff --cached
-	edit = !git reset --soft head^ && git reset .
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	p = pushit -u origin head
+	p = push -u origin head
 	rc = rebase --continue
 	remotes = remote -v
 	rhu = reset --hard @{upstream}
-	ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)' -
 	ri = rebase --interactive
+	ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)' -
 	sl = stash list
 	sp = stash pop
 	ss = stash
 	st = status -sb
 	tags = tag -l
-	watch = !watch -c git lg
+	watch = !watch -c git lg --color
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
 [diff]
 	algorithm = patience
+	compactionHeuristic = true
 [pull]
 	rebase = true
 [pager]
@@ -46,3 +51,6 @@
 	show = diff-so-fancy | less --tabs=4 -RFX
 [rebase]
 	autosquash = true
+	autostash = true
+[merge]
+	conflictstyle = diff3
