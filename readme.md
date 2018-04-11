@@ -5,10 +5,7 @@
 1. `cd ~`
 1. `git clone git@github.com:dustinspecker/dotfiles.git`
 1. `cd dotfiles`
-1. `stow git`
-1. `stow vim`
-1. `stow zsh`
-1. `stow tmux`
+1. `stow git tmux vim zsh`
 
 ## Git
 1. Install [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy) for improved diff highlighting
