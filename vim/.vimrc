@@ -1,7 +1,39 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Pathogen
+" => Plug
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-execute pathogen#infect()
+call plug#begin('~/.vim/plugged')
+
+Plug 'airblade/vim-gitgutter'
+Plug 'ap/vim-buftabline'
+Plug 'chriskempson/base16-vim'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'derekwyatt/vim-scala'
+Plug 'dustinspecker/vim-snippets-dustinspecker'
+Plug 'easymotion/vim-easymotion'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'elmcast/elm-vim'
+Plug 'elzr/vim-json'
+Plug 'garbas/vim-snipmate'
+Plug 'jtratner/vim-flavored-markdown'
+Plug 'kien/ctrlp.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'marcweber/vim-addon-mw-utils'
+Plug 'mxw/vim-jsx'
+Plug 'othree/yajs'
+Plug 'scrooloose/nerdtree'
+Plug 'shougo/vimproc.vim'
+Plug 'suan/vim-instant-markdown'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tomtom/tlib_vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'unblevable/quick-scope'
+Plug 'xuyuanp/nerdtree-git-plugin'
+Plug 'yggdroot/indentline'
+
+call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
