@@ -1,5 +1,10 @@
 eval "$(hub alias -s)"
-fpath=( "$HOME/.zfunctions" $fpath )
+
+# Move next only if `homebrew` is installed
+if command -v brew >/dev/null 2>&1; then
+	# Load rupa's z if installed
+	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi
 
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
@@ -15,9 +20,6 @@ zstyle :compinstall filename '/Users/dustin/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
-
-# enable z
-. ~/projects/z/z.sh
 
 # nvm
 . ~/.nvm/nvm.sh
