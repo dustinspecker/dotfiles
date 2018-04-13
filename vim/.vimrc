@@ -5,7 +5,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'ap/vim-buftabline'
-Plug 'chriskempson/base16-vim'
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'derekwyatt/vim-scala'
 Plug 'dustinspecker/vim-snippets-dustinspecker'
@@ -106,11 +105,8 @@ set ffs=unix,dos,mac
 " Use dark background
 set background=dark
 
-" Use 256 colors for base16 theme
-let base16colorspace=256
-
-" Use base16-eighties
-colorscheme base16-eighties
+" Use Tomorrow-Night-Eighties
+colorscheme Tomorrow-Night-Eighties
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Files, backups and undo
