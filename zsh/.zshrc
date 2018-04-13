@@ -24,7 +24,7 @@ compinit
 # nvm
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
-nvm use stable
+nvm use 9
 
 # pure prompt
 autoload -U promptinit && promptinit
