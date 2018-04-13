@@ -30,7 +30,7 @@ nvm use 9
 autoload -U promptinit && promptinit
 prompt pure
 
-source /Users/dustin/projects/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # added by travis gem
 [ -f /Users/dustin/.travis/travis.sh ] && source /Users/dustin/.travis/travis.sh
