@@ -22,7 +22,8 @@ compinit
 # End of lines added by compinstall
 
 # nvm
-. ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 nvm use stable
 
 # pure prompt
