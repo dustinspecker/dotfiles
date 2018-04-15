@@ -29,3 +29,25 @@ It will save and restore the following:
 1. `vim`
 1. `:PlugInstall` to install Vim plugins
 
+## Mac Setup
+1. install home-brew
+1. install vim-plug
+
+Run commands:
+1. `brew tap caskroom/version`
+1. `brew cask install google-chrome-canary`
+1. `brew cask install iterm2`
+1. `chsh -s $(which zsh)`
+1. `brew install hub`
+1. `hub clone dotfiles`
+1. `brew intall stow`
+1. `stow git tmux vim zsh`
+1. `brew install z`
+1. `brew install nvm`
+1. `npm i -g diff-so-fancy`
+1. `npm i -g pure-prompt`
+1. `brew install zsh-syntax-highlighting`
+1. `brew install tmux`
+1. `brew install reattach-to-user-namespace`
+1. `brew cask install dropbox`
+1. `brew cask install Spotify`
