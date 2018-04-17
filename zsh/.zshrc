@@ -4,6 +4,8 @@ eval "$(hub alias -s)"
 if command -v brew >/dev/null 2>&1; then
 	# Load rupa's z if installed
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+else
+	. ~/tools/z/z.sh
 fi
 
 # Lines configured by zsh-newuser-install
@@ -23,14 +25,26 @@ compinit
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+if [ -e /usr/local/opt/nvm/nvm.sh ]; then
+	. "/usr/local/opt/nvm/nvm.sh"
+else
+	. "$NVM_DIR/nvm.sh"
+fi
 nvm use 9
+
+if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+	fpath+=("$NVM_BIN/../lib/node_modules/pure-prompt/functions")
+fi
 
 # pure prompt
 autoload -U promptinit && promptinit
 prompt pure
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -e /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+else
+	source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
 # added by travis gem
 [ -f /Users/dustin/.travis/travis.sh ] && source /Users/dustin/.travis/travis.sh
