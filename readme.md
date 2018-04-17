@@ -51,6 +51,7 @@ Run commands:
 1. `brew install reattach-to-user-namespace`
 1. `brew cask install dropbox`
 1. `brew cask install Spotify`
+1. `brew install git` - this overrides the Apple version and contains `gitk`
 
 ## Ubuntu Setup
 1. install vim-plug
@@ -69,3 +70,4 @@ Run commands:
 1. `mkdir ~/tools/z`
 1. `git clone https://github.com/rupa/z.git ~/tools/z`
 1. `sudo apt install tmux`
+1. `sudo apt install gitk`
