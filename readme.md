@@ -51,3 +51,21 @@ Run commands:
 1. `brew install reattach-to-user-namespace`
 1. `brew cask install dropbox`
 1. `brew cask install Spotify`
+
+## Ubuntu Setup
+1. install vim-plug
+1. `mkdir ~/.nvm` && install nvm
+1. install zsh-syntax-highlighting
+
+Run commands:
+1. `sudo apt install git`
+1. `sudo apt install vim-gtk`
+1. `sudo apt install curl`
+1. `sudo apt install zsh`
+1. `sudo add-apt-repository ppa:cpick/hub`
+1. `sudo apt update`
+1. `sudo apt install hub`
+1. `npm i -g diff-so-fancy pure-prompt`
+1. `mkdir ~/tools/z`
+1. `git clone https://github.com/rupa/z.git ~/tools/z`
+1. `sudo apt install tmux`
