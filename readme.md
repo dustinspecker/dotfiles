@@ -63,6 +63,7 @@ Run commands:
 1. `sudo apt install vim-gtk`
 1. `sudo apt install curl`
 1. `sudo apt install zsh`
+1. `sudo apt install stow`
 1. `sudo add-apt-repository ppa:cpick/hub`
 1. `sudo apt update`
 1. `sudo apt install hub`
