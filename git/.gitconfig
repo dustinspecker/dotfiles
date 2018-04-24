@@ -24,6 +24,7 @@
 	cop = checkout -p
 	cp = cherry-pick
 	cpc = cherry-pick --continue
+	dc = diff --cached
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 	p = push -u origin head
 	rc = rebase --continue
