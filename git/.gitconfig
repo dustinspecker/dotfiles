@@ -26,7 +26,7 @@
 	cpc = cherry-pick --continue
 	dc = diff --cached
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-	p = push -u origin head
+	p = push -u origin HEAD
 	rc = rebase --continue
 	remotes = remote -v
 	rhu = !sh -c 'git fetch && git reset --hard @{upstream}'
