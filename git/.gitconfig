@@ -33,6 +33,7 @@
 	rhu = !sh -c 'git fetch && git reset --hard @{upstream}'
 	ri = rebase --interactive
 	ro = !sh -c 'git rebase --onto $1 $2 $(git rev-parse --abbrev-ref HEAD)' -
+	root = rev-parse --show-toplevel
 	sl = stash list
 	sp = stash pop
 	ss = stash
