@@ -30,7 +30,7 @@ if [ -e /usr/local/opt/nvm/nvm.sh ]; then
 else
 	. "$NVM_DIR/nvm.sh"
 fi
-nvm use 9
+nvm use 10
 
 if [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 	fpath+=("$NVM_BIN/../lib/node_modules/pure-prompt/functions")
