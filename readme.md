@@ -1,5 +1,7 @@
 # dotfiles
 
+DEPRECATED: MOVED TO [ansible-dotfiles](https://github.com/dustinspecker/ansible-dotfiles)
+
 ## Install
 
 1. `cd ~`
